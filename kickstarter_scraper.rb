@@ -20,13 +20,4 @@ def create_project_hash
 
 end
 
-
-  # projects: kickstarter.css(".project-card")
-  # title: project.css("h2.bbcard_name strong a").text
-  # image link: project.css("div.project-thumbnail a img").attribute("src").value
-  # desc: project.css("p.bbcard_blurb").text.strip
-  # project.css(".location-name").text
-  # % funded project.css(".project-stats li.first.funded strong").text.gsub("%", "").to_i
-
-
 create_project_hash
