@@ -9,9 +9,9 @@ def create_project_hash
   kickstarter.css(".project-card").each do |project|
     title = project.css("h2.bbcard_name strong a").text
     projects[title.to_sym] = {
-      :image_link => project.css("div.project-thumbnail a img").attribute("src").value
-      :description => project.css("p.bbcard_blurb").text.strip
-      :location => project.css(".location-name").text
+      :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
+      :description => project.css("p.bbcard_blurb").text.strip,
+      :location => project.css(".location-name").text,
       :percent_funded => project.css(".project-stats li.first.funded strong").text.gsub("%", "").to_i
     }
   end
